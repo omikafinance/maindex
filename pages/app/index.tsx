@@ -135,7 +135,7 @@ const App: NextPage = () => {
           ))}
         </Select>
       </Box>
-      <Button className="ml-20 flex" onClick={handleSwap} variant="link">
+      <Button className="ml-20 my-4 flex" onClick={handleSwap} variant="link">
   <ArrowUpIcon />
   <ArrowDownIcon />
 </Button>
