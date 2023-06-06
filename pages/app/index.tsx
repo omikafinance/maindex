@@ -41,8 +41,8 @@ const App: NextPage = () => {
     <Box className="flex-grow">
       {loading ? <Spinner /> : <div>{/* display stats here */}</div>}
     </Box>
-    <Box className="flex-grow">yoo</Box>
-    <Box className="flex-grow">yoo</Box>
+    {/* <Box className="flex-grow">yoo</Box>
+    <Box className="flex-grow">yoo</Box> */}
   </Box>
 
           {/* TradingView widget */}
