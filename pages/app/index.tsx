@@ -17,7 +17,7 @@ const App: NextPage = () => {
     // setLoading(false)
   }, [pair]);
 
-  const handlePairChange = (event: ChangeEvent<HTMLInputElement>) => {
+  const handlePairChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setPair(event.target.value);
   };
 
