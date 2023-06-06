@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect,ChangeEvent  } from 'react';
 import { Box, Tab, TabList, TabPanel, TabPanels, Tabs, Select, Spinner,Text } from '@chakra-ui/react';
 import { AdvancedRealTimeChart } from "react-ts-tradingview-widgets";
 import Nav from "../../components/appnav";
@@ -17,7 +17,7 @@ const App: NextPage = () => {
     // setLoading(false)
   }, [pair]);
 
-  const handlePairChange = (event) => {
+  const handlePairChange = (event: ChangeEvent<HTMLInputElement>) => {
     setPair(event.target.value);
   };
 
@@ -102,7 +102,7 @@ const App: NextPage = () => {
         <TabPanels>
           <TabPanel >
             {/* Market content */}
-            
+
           </TabPanel>
           <TabPanel>
             {/* Limit content */}
