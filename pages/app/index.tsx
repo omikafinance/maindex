@@ -1,8 +1,10 @@
 import { useState, useEffect,ChangeEvent  } from 'react';
-import { Box, Tab, TabList, TabPanel, TabPanels, Tabs, Select, Spinner,Text } from '@chakra-ui/react';
+import { Box, Tab, TabList, TabPanel, TabPanels, Tabs, Select, Spinner,Input,Button,Text } from '@chakra-ui/react';
 import { AdvancedRealTimeChart } from "react-ts-tradingview-widgets";
 import Nav from "../../components/appnav";
 import type { NextPage } from 'next';
+import { ArrowUpDownIcon } from "@chakra-ui/icons";
+import { ArrowUpIcon, ArrowDownIcon } from "@chakra-ui/icons";
 
 // Other components, states, and handlers go here
 
@@ -20,7 +22,19 @@ const App: NextPage = () => {
   const handlePairChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setPair(event.target.value);
   };
+  const [payValue, setPayValue] = useState("");
+  const [receiveValue, setReceiveValue] = useState("");
+  const [payCoin, setPayCoin] = useState("BTC");
+  const [receiveCoin, setReceiveCoin] = useState("ETH");
 
+  const coins = ["BTC", "ETH", "BNB", "USDC"]; // Dummy data
+
+  const handleSwap = () => {
+    setPayValue(receiveValue);
+    setReceiveValue(payValue);
+    setPayCoin(receiveCoin);
+    setReceiveCoin(payCoin);
+  };
   return (
     <div className="bg-linen">
       <Nav />
@@ -101,7 +115,51 @@ const App: NextPage = () => {
 
         <TabPanels>
           <TabPanel >
-            {/* Market content */}
+          <Box className="rounded-lg bg-gray-200 p-4">
+      <Text className="text-left">Pay</Text>
+      <Box className="flex items-center">
+        <Input
+          className="rounded-lg"
+          value={payValue}
+          onChange={(e) => setPayValue(e.target.value)}
+        />
+        <Select
+          className="ml-2"
+          value={payCoin}
+          onChange={(e) => setPayCoin(e.target.value)}
+        >
+          {coins.map((coin) => (
+            <option key={coin} value={coin}>
+              {coin}
+            </option>
+          ))}
+        </Select>
+      </Box>
+      <Button className="ml-20 flex" onClick={handleSwap} variant="link">
+  <ArrowUpIcon />
+  <ArrowDownIcon />
+</Button>
+
+      <Text className="text-left">Receive</Text>
+      <Box className="flex items-center">
+        <Input
+          className="rounded-lg"
+          value={receiveValue}
+          onChange={(e) => setReceiveValue(e.target.value)}
+        />
+        <Select
+          className="ml-2"
+          value={receiveCoin}
+          onChange={(e) => setReceiveCoin(e.target.value)}
+        >
+          {coins.map((coin) => (
+            <option key={coin} value={coin}>
+              {coin}
+            </option>
+          ))}
+        </Select>
+      </Box>
+    </Box>
 
           </TabPanel>
           <TabPanel>
