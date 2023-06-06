@@ -154,7 +154,7 @@ const Governance: NextPage = () => {
                 </div>
                 <div className="self-stretch flex flex-row items-center justify-center text-[1rem] text-olive">
                   <div className="flex-1 relative tracking-[-0.02em] leading-[100%] font-medium">
-                    Discussion related to Mummy governance and proposals
+                    Discussion related to Omika governance and proposals
                   </div>
                 </div>
               </div>
@@ -171,7 +171,7 @@ const Governance: NextPage = () => {
                 </div>
                 <div className="self-stretch flex flex-row items-center justify-center text-center text-[1rem] text-olive">
                   <div className="flex-1 relative tracking-[-0.02em] leading-[100%] font-medium">
-                    Discuss features you would like to see Mummy implement.
+                    Discuss features you would like to see Omika implement.
                     Discuss it here.
                   </div>
                 </div>
@@ -237,7 +237,7 @@ const Governance: NextPage = () => {
                   </div>
                   <div className="self-stretch hidden flex-row items-center justify-center text-[0.88rem] text-olive">
                     <div className="flex-1 relative tracking-[-0.02em] leading-[120%] font-medium">
-                      Discussion related to Mummy governance and proposals
+                      Discussion related to Omika governance and proposals
                     </div>
                   </div>
                 </div>
@@ -254,7 +254,7 @@ const Governance: NextPage = () => {
                 <div className="w-[33rem] flex flex-col items-start justify-center gap-[0.5rem]">
                   <div className="self-stretch flex flex-row items-center justify-center">
                     <b className="flex-1 relative tracking-[-0.02em] leading-[120%]">
-                      Mummy Lottery NFT
+                      Omika Lottery NFT
                     </b>
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center text-[0.88rem] text-olive">
@@ -276,7 +276,7 @@ const Governance: NextPage = () => {
                 <div className="w-[33rem] flex flex-col items-start justify-center gap-[0.5rem]">
                   <div className="self-stretch flex flex-row items-center justify-center">
                     <b className="flex-1 relative tracking-[-0.02em] leading-[120%]">
-                      On adding utilities and increasing the value of MummyNFT
+                      On adding utilities and increasing the value of OmikaNFT
                     </b>
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center text-[0.88rem] text-olive">
@@ -343,7 +343,7 @@ const Governance: NextPage = () => {
                 <div className="w-[33rem] flex flex-col items-start justify-center gap-[0.5rem]">
                   <div className="self-stretch flex flex-row items-center justify-center">
                     <b className="flex-1 relative tracking-[-0.02em] leading-[120%]">
-                      On adding utilities and increasing the value of MummyNFT
+                      On adding utilities and increasing the value of OmikaNFT
                     </b>
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center text-[0.88rem] text-olive">
@@ -365,7 +365,7 @@ const Governance: NextPage = () => {
                 <div className="w-[33rem] flex flex-col items-start justify-center gap-[0.5rem]">
                   <div className="self-stretch flex flex-row items-center justify-center">
                     <b className="flex-1 relative tracking-[-0.02em] leading-[120%]">
-                      On adding utilities and increasing the value of MummyNFT
+                      On adding utilities and increasing the value of OmikaNFT
                     </b>
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center text-[0.88rem] text-olive">
@@ -387,7 +387,7 @@ const Governance: NextPage = () => {
                 <div className="w-[33rem] flex flex-col items-start justify-center gap-[0.5rem]">
                   <div className="self-stretch flex flex-row items-center justify-center">
                     <b className="flex-1 relative tracking-[-0.02em] leading-[120%]">
-                      On adding utilities and increasing the value of MummyNFT
+                      On adding utilities and increasing the value of OmikaNFT
                     </b>
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center text-[0.88rem] text-olive">

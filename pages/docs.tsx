@@ -21,10 +21,10 @@ const Docs: NextPage = () => {
               users are now moving to trade on DEX as an alternative to CEX.
             </div>
             <div className="self-stretch relative tracking-[-0.02em] leading-[150%] font-medium">
-              Today we are proud to introduce Mummy Finance, a SuperDEX that has
+              Today we are proud to introduce Omika Finance, a SuperDEX that has
               implemented cutting-edge technology to provide traders with an
               unparalleled experience and reshape the concept of trading on
-              Fantom Opera. Time to trade with Mummy Finance.
+              Gnosis. Time to trade with Omika Finance.
             </div>
           </div>
         </div>
@@ -90,100 +90,24 @@ const Docs: NextPage = () => {
         </div>
         <div className="self-stretch flex flex-col items-start justify-center gap-[1.5rem]">
           <b style={{ background: 'linear-gradient(141.25deg, #7ebba2, #133629)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }} className="relative tracking-[-0.02em] leading-[120%] inline-block [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] w-[41.75rem]">
-            What is omkia finance?
+            What is Omika finance?
           </b>
           <div className="self-stretch flex flex-col items-start justify-center gap-[1rem] text-[1rem]">
             <div className="self-stretch relative tracking-[-0.02em] leading-[150%] font-medium">
-              Mummy Finance is a swap and perpetual DEX that offers a variety of
+              Omika Finance is a swap and perpetual DEX that offers a variety of
               trading options and high liquidity for a wide range of blue chip
               crypto assets. The platform represents a new type of decentralized
               exchange due to the continuous innovation promoted by its
               developers.
             </div>
             <div className="self-stretch relative tracking-[-0.02em] leading-[150%] font-medium">
-              Mummy Finance aims to become the solution for all traders who want
+              Omika Finance aims to become the solution for all traders who want
               to keep control of their capital and enjoy the best trading
-              experience on Fantom Opera, with distinctive advantages:
+              experience on Gnosis, with distinctive advantages:
             </div>
           </div>
         </div>
-        <div className="self-stretch flex flex-col items-start justify-center gap-[1.5rem] text-[1.5rem]">
-          <b style={{ background: 'linear-gradient(141.25deg, #7ebba2, #133629)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }} className="relative text-[2rem] tracking-[-0.02em] leading-[120%] inline-block  [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] w-[41.75rem]">
-            Why build on Fantom Opera and Optimism?
-          </b>
-          <div className="self-stretch flex flex-col items-start justify-center gap-[1rem]">
-            <b style={{ background: 'linear-gradient(141.25deg, #7ebba2, #133629)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }} className="self-stretch relative tracking-[-0.02em] leading-[120%] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
-              1. About Fantom Opera
-            </b>
-            <div className="self-stretch relative text-[inherit] tracking-[-0.02em] leading-[150%] font-medium font-inherit">
-              <p className="m-0">
-                A key benefit of the Fantom Opera blockchain is that it allows
-                app developers to customize their applications. Since it is
-                highly scalable, this network offers very high transaction
-                speeds. In addition to its high scalability, the network offers
-                high levels of security and decentralization. In addition,
-                Fantom’s aBFT consensus makes trading on Fantom Finance fast,
-                cheap, and secure.
-              </p>
-              <ul className="m-0 pl-[1.31rem]">
-                <li className="mb-[false]">
-                  Fast: Lachesis parallelizes transaction processing and
-                  minimizes communication overhead within the system to achieve
-                  high throughput with almost instant finality
-                </li>
-                <li className="mb-[false]">
-                  Cheap: Transactions cost a fraction of a cent
-                </li>
-                <li>
-                  Secure: The network is secured via Proof-of-Stake and
-                  independent validators across the globe, providing Byzantine
-                  Fault Tolerance
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="self-stretch flex flex-col items-start justify-center gap-[1rem]">
-            <b style={{ background: 'linear-gradient(141.25deg, #7ebba2, #133629)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }} className="self-stretch relative tracking-[-0.02em] leading-[120%]  [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
-              2. About Optimism
-            </b>
-            <div className="self-stretch relative text-[1rem] tracking-[-0.02em] leading-[150%] font-medium">
-              <p className="m-0">
-                Enhanced transaction speed and throughput: Optimism's layer 2
-                technology will enable Mummy Finance to process transactions
-                with lightning speed, providing a seamless user experience and
-                increasing the potential for high-volume trading activity.
-              </p>
-              <p className="m-0">
-                Reduced transaction fees: By deploying on Optimism, Mummy
-                Finance can benefit from significantly reduced gas fees compared
-                to operating solely on Ethereum's layer 1, making it more
-                accessible and affordable for users.
-              </p>
-              <p className="m-0">
-                Access to a larger user base: Optimism's existing user base,
-                coupled with its partnerships with other protocols, will enable
-                Mummy Finance to tap into a wider pool of engaged users and
-                expand its reach.
-              </p>
-              <p className="m-0">
-                Marketing Support: Optimism brings one of the most vibrant
-                marketing support to help Mummy showcase the product and capture
-                a large audience base.
-              </p>
-              <p className="m-0">
-                Easy access to Mummy: With robust infrastructure support from
-                more than 10 of the top 50 exchanges offering on-ramps and
-                multiple other partners to assist with on-ramping on the chain,
-                it is effortless to access Mummy, enabling it to capture more
-                users. Additionally, many of Mummy’s current partners exist on
-                Optimism, including DEX aggregators (such as 1inch, Open Ocean,
-                Firebird, KyberSwap, Paraswap) and multi-chain swaps (like
-                O3Swap and Voyager), which will help accelerate growth on the
-                platform.
-              </p>
-            </div>
-          </div>
-        </div>
+       
       </div>
       <div className="absolute bottom-[0rem] left-[0rem] box-border w-[90rem] flex flex-row py-[2rem] px-[10rem] items-center justify-between text-olive font-lexend-deca border-t-[1px] border-solid border-stroke">
         <div className="relative tracking-[-0.02em] leading-[120%]">
