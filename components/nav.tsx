@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import { Box,Spacer,DrawerHeader,DrawerFooter,Input, Flex,IconButton,Text, Button, Drawer, DrawerBody, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import type { NextPage } from "next";
+import Link from "next/link"
 interface MenuItemProps {
   children: ReactNode;
 }
@@ -24,10 +25,10 @@ const Nav: NextPage = () => {
     <Box
       className=" flex flex-col bg-red lg:flex-row justify-between gap-2"
     >
-      <MenuItem>App</MenuItem>
-      <MenuItem>Protocol</MenuItem>
-      <MenuItem>Governance</MenuItem>
-      <MenuItem>Docs</MenuItem>
+    <Link href="/app"> <MenuItem>App</MenuItem></Link>
+      <Link href="/protocol"> <MenuItem>Protocol</MenuItem></Link> 
+     <Link href="/governance"><MenuItem>Governance</MenuItem></Link> 
+      <Link href="/docs"><MenuItem>Docs</MenuItem></Link>
     </Box>
   );
   
@@ -59,11 +60,13 @@ const Nav: NextPage = () => {
     </Box>
     <Box className="hidden lg:flex flex-row space-x-0">
       <MenuItems />
+      <Link href="/app">
       <Button 
         className="rounded-md bg-gradient-to-r from-orange-500 to-orange-700 flex flex-row py-3 px-6 items-center justify-center text-white"
       >
         Launch App
       </Button>
+      </Link>
     </Box>
   
     <Box className="base:block lg:hidden ml-4">

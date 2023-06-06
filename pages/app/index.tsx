@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { Box, Tab, TabList, TabPanel, TabPanels, Tabs, Select, Spinner } from '@chakra-ui/react';
+import { Box, Tab, TabList, TabPanel, TabPanels, Tabs, Select, Spinner,Text } from '@chakra-ui/react';
 import { AdvancedRealTimeChart } from "react-ts-tradingview-widgets";
 import Nav from "../../components/appnav";
 import type { NextPage } from 'next';
+
 // Other components, states, and handlers go here
 
 const App: NextPage = () => {
@@ -27,15 +28,22 @@ const App: NextPage = () => {
       <Box display={{ base: "block", lg: "flex" }}>
         {/* Left section */}
         <Box flexBasis={{ base: "100%", lg: "75%" }}>
-          <Box p={5}>
-            <Select placeholder="Select pair" onChange={handlePairChange}>
-              <option value="BTC/USD">BTC/USD</option>
-              <option value="ETH/USD">ETH/USD</option>
-              <option value="BNB/USD">BNB/USD</option>
-              <option value="LINK/USD">LINK/USD</option>
-            </Select>
-            {loading ? <Spinner /> : <div>{/* display stats here */}</div>}
-          </Box>
+        <Box p={5} className="flex flex-col lg:flex-row justify-between space-x-4">
+        <Box className="lg:w-1/3 ">
+  <Select placeholder="Select pair" onChange={handlePairChange}>
+    <option value="BTC/USD">BTC/USD</option>
+    <option value="ETH/USD">ETH/USD</option>
+    <option value="BNB/USD">BNB/USD</option>
+    <option value="LINK/USD">LINK/USD</option>
+  </Select>
+</Box>
+
+    <Box className="flex-grow">
+      {loading ? <Spinner /> : <div>{/* display stats here */}</div>}
+    </Box>
+    <Box className="flex-grow">yoo</Box>
+    <Box className="flex-grow">yoo</Box>
+  </Box>
 
           {/* TradingView widget */}
           {pair && (
@@ -43,7 +51,8 @@ const App: NextPage = () => {
               symbol={pair}
               theme="dark"
               autosize
-              style={{display: {base: "none", lg: "block"}}}
+              
+              className="hidden lg:block"
             />
           )}
 
@@ -82,8 +91,8 @@ const App: NextPage = () => {
   <TabPanels>
     <TabPanel>
       {/* Long content: market, limit, trigger */}
-      <Tabs>
-      <TabList bg="blue.200" h="60px">
+      <Tabs variant='soft-rounded'>
+      <TabList  h="60px">
 
           <Tab>Market</Tab>
           <Tab>Limit</Tab>
@@ -91,8 +100,9 @@ const App: NextPage = () => {
         </TabList>
 
         <TabPanels>
-          <TabPanel bg="gray.200">
+          <TabPanel >
             {/* Market content */}
+            
           </TabPanel>
           <TabPanel>
             {/* Limit content */}
@@ -102,11 +112,15 @@ const App: NextPage = () => {
           </TabPanel>
         </TabPanels>
       </Tabs>
+      <Box className="flex flex-column justify-between">
+       <Text className="font-bold">Useful Links</Text>
+
+      </Box>
     </TabPanel>
 
     <TabPanel>
       {/* Short content: market, limit, trigger */}
-      <Tabs>
+      <Tabs variant='soft-rounded'>
         <TabList>
           <Tab>Market</Tab>
           <Tab>Limit</Tab>
@@ -129,7 +143,7 @@ const App: NextPage = () => {
 
     <TabPanel>
       {/* Swap content: market, limit, trigger */}
-      <Tabs>
+      <Tabs variant='soft-rounded'>
         <TabList>
           <Tab>Market</Tab>
           <Tab>Limit</Tab>
