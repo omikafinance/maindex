@@ -22,15 +22,15 @@ const App: NextPage = () => {
   };
 
   return (
-    <div>
+    <div className="bg-linen">
       <Nav />
       <div>
-      <Box display={{ base: "block", lg: "flex" }}>
+      <Box display={{ base: "block", lg: "flex" }} className="bg-linen">
         {/* Left section */}
-        <Box flexBasis={{ base: "100%", lg: "75%" }}>
+        <Box flexBasis={{ base: "100%", lg: "75%" }} className="bg-linen">
         <Box p={5} className="flex flex-col lg:flex-row justify-between space-x-4">
         <Box className="lg:w-1/3 ">
-  <Select placeholder="Select pair" onChange={handlePairChange}>
+  <Select placeholder="Select pair" onChange={handlePairChange} >
     <option value="BTC/USD">BTC/USD</option>
     <option value="ETH/USD">ETH/USD</option>
     <option value="BNB/USD">BNB/USD</option>
@@ -47,13 +47,13 @@ const App: NextPage = () => {
 
           {/* TradingView widget */}
           {pair && (
+            <Box className="hidden lg:block flex-1 h-full">
             <AdvancedRealTimeChart
               symbol={pair}
               theme="dark"
               autosize
-              
-              className="hidden lg:block"
             />
+          </Box>
           )}
 
           {/* Tabbed section: positions, orders, trade history */}
