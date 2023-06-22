@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 
 const Omikavault: NextPage = () => {
   return (
-    <div className="absolute top-[163.88rem] left-[7.5rem] flex flex-col items-center justify-center gap-[3.5rem] text-center text-[2.5rem] text-dark-green font-lora">
+    <div className=" left-[7.5rem] flex flex-col items-center justify-center gap-[3.5rem] text-center text-[2.5rem] text-dark-green font-lora">
       <div className="flex flex-col items-center justify-center gap-[1rem]">
         <div className="w-[36.5rem] flex flex-row items-center justify-center">
           <img
@@ -22,7 +22,7 @@ const Omikavault: NextPage = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center gap-[1.5rem] text-left text-[1.5rem] font-karla">
-        <div className="flex flex-row items-start justify-start gap-[2rem]">
+        <div className="flex flex-col lg:flex-row items-start justify-start gap-[2rem]">
           <div className="rounded-3xl bg-antiquewhite w-[36.5rem] h-[9.94rem] overflow-hidden shrink-0 flex flex-col py-[1rem] px-[1.5rem] box-border items-start justify-center relative gap-[3rem]">
             <div className="self-stretch flex flex-row items-center justify-between z-[0]">
               <div className="flex flex-row items-center justify-center gap-[0.5rem]">
@@ -145,7 +145,7 @@ const Omikavault: NextPage = () => {
             />
           </div>
         </div>
-        <div className="flex flex-row items-start justify-start gap-[2rem]">
+        <div className="flex flex-col lg:flex-row items-start justify-start gap-[2rem]">
           <div className="rounded-3xl bg-antiquewhite w-[36.5rem] h-[9.94rem] overflow-hidden shrink-0 flex flex-col py-[1rem] px-[1.5rem] box-border items-start justify-center relative gap-[3rem]">
             <div className="self-stretch flex flex-row items-center justify-between z-[0]">
               <div className="flex flex-row items-center justify-center gap-[0.5rem]">

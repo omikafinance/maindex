@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 
 const Impact: NextPage = () => {
   return (
-    <div className=" absolute top-[65.5rem] left-0 lg:left-[calc(50%_-_720px)] w-full lg:w-auto bg-dark-green flex flex-col py-20 px-6 lg:px-[7.5rem] items-center justify-center gap-3 lg:gap-[3rem] text-center text-[2.5rem] lg:text-[2.5rem] text-white font-lora">
+    <div className=" mt-[15.5rem] left-0 lg:left-[calc(50%_-_720px)] w-full lg:w-auto bg-dark-green flex flex-col py-20 px-6 lg:px-[7.5rem] items-center justify-center gap-3 lg:gap-[3rem] text-center text-[2.5rem] lg:text-[2.5rem] text-white font-lora">
       <b className="relative tracking-[-0.02em] leading-[120%]">
         Unveiling Our Impact
       </b>

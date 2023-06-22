@@ -1,8 +1,11 @@
 import type { NextPage } from "next";
-
+import Lottie from "lottie-react";
+import animationData from "./herobg.json"
 const Hero: NextPage = () => {
+ 
   return (
-    <div style={{top: 'calc(50% - 1751px)', left: 'calc(50% - 329px)'}} className="absolute flex flex-col items-center justify-center gap-8 text-center text-53xl sm:text-53xl md:text-53xl lg:text-53xl xl:text-53xl text-dark-green font-lora">
+    <div  className="flex flex-col  mt-60 items-center justify-center gap-8 text-center text-53xl sm:text-53xl md:text-53xl lg:text-53xl xl:text-53xl text-dark-green font-lora">
+    <Lottie animationData={animationData} loop={true} style={{ position: 'absolute', zIndex: -1 }} />
     <div className="flex flex-col items-center justify-center gap-4">
         <b className="self-stretch relative tracking-[-0.02em] leading-[120%]">
             <p className="m-0" style={{ background: 'linear-gradient(141.25deg, #7ebba2, #133629)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
@@ -13,7 +16,7 @@ const Hero: NextPage = () => {
             </p>
         </b>
 
-        <div className="relative text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg tracking-[-0.02em] leading-[160%] font-medium font-karla inline-block w-64 sm:w-80 md:w-96 lg:w-96 xl:w-96">
+        <div className="relative text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg tracking-[-0.02em] leading-[160%] font-medium font-karla inline-block w-full sm:w-80 md:w-96 lg:w-96 xl:w-96">
             Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 50x
             leverage directly from your wallet
         </div>
